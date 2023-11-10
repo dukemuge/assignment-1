@@ -1,6 +1,7 @@
-package org.bandaHealth.challenge.partTwo;
+package org.bandaHealth.partTwo.service;
 
-import org.bandaHealth.challenge.commons.models.Elf;
+
+import org.bandaHealth.commons.models.Elf;
 
 import java.util.HashMap;
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class ElfServiceTwo {
 
-    public   static int takeSumOfTop3ElvesWithMostCalories2(List<Elf> elves) {
+    public   static int takeSumOfTop3ElvesWithMostCalories(List<Elf> elves) {
         var maps  = getTop3ElvesWithHighestCalories(elves);
         return calculateSumOfValues(maps);
     }

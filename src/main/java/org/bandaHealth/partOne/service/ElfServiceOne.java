@@ -1,12 +1,16 @@
-package org.bandaHealth.challenge.partOne;
+package org.bandaHealth.partOne.service;
 
-import org.bandaHealth.challenge.commons.models.Elf;
+
+import org.bandaHealth.commons.models.Elf;
 
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ElfServiceOne {
+
+    //getting a list of elves and applying max  function from map collection to obtain
+    //the map value with the maximum values
     public  static int getMaximumValueOfCalorieInElfList(List<Elf> elfList){
 
         var results = elfList.stream()
